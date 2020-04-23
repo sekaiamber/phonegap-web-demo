@@ -2,6 +2,7 @@ import initConfig from './config';
 import initWeb from './web';
 import initLog from './log';
 import initAds from './ads';
+import { message } from '../utils';
 
 const { $ } = window;
 
