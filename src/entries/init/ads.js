@@ -7,7 +7,12 @@ export default function init(ads) {
   ads.forEach((ad) => {
     const $ad = $(`<div class="ad" style="background-image: url(${ad.img})"></div>`);
     $ad.click(() => {
-      window.open(ad.link);
+      const { cordova } = window;
+      if (cordova.InAppBrowser) {
+        cordova.InAppBrowser.open(ad.link, '_system');
+      } else {
+        window.open(ad.link);
+      }
     });
     $ads.append($ad);
   });
