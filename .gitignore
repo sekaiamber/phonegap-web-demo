@@ -5,3 +5,4 @@ public/
 dist
 tmp
 *.keystore
+www/watch
