@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.hg" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>黄瓜清爽版</name>
+    <name>黄瓜娱乐</name>
     <description>
-        黄瓜清爽版
+        黄瓜娱乐
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        黄瓜清爽版
+        黄瓜娱乐
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />
