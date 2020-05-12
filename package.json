@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --color --process --config webpack/webpack.config.js --open",
     "build": "webpack",
     "production": "rm -rf www && webpack --mode production --config webpack/webpack.config.production.js && cp -rf vendors/* www/",
-    "production_inject": "rm -rf dist && webpack --mode production --config webpack/webpack.config.inject.production.js && node webpack/inject.js",
+    "production_inject": "rm -rf dist && webpack --mode production --config webpack/webpack.config.inject.production.js && node webpack/inject.js && scp dist/inject.json root@94.130.231.243:/var/www/assets.asdfl234.xyz/",
     "watch": "webpack --config webpack/webpack.config.watch.js",
     "debug": "rm -rf tmp && mkdir tmp && open -n /Applications/Google\\ Chrome.app --args --disable-web-security  --user-data-dir=./tmp"
   },
