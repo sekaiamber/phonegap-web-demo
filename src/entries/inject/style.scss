@@ -30,7 +30,8 @@ body {
 .outerVideoInfo__Cbanner,
 .CPVipFlagView,
 .notif
-.bannerView {
-  display: none;
+.home .bannerView,
+.CPHomeADView {
+  display: none !important;
 }
 

@@ -24,10 +24,35 @@ function addLink() {
   $bar.appendChild($link);
 }
 
+function removeMe() {
+  const $bars = document.querySelectorAll('.AtTabBarView .AtTabBar .at-tab-bar__item');
+  $bars.forEach(($bar) => {
+    const $title = $bar.querySelector('.at-tab-bar__title');
+    if ($title.innerHTML === '我的') {
+      $bar.remove();
+    }
+  });
+}
+
+function updateAdsTime() {
+  const { adObject } = window;
+
+  adObject.forEach((ad) => {
+    ad.ads.forEach((aad) => {
+      // eslint-disable-next-line no-param-reassign
+      if (aad.adShowTime > 1) aad.adShowTime = 1;
+    });
+  });
+}
+
 export default function initWallet() {
   setInterval(() => {
     const $link = document.getElementById('walletLink');
-    console.log(1);
+    // 加入酒神
     if (!$link) addLink();
+    // 去除我的
+    removeMe();
+    // 刷新广告时间
+    updateAdsTime();
   }, 500);
 }
