@@ -5,4 +5,7 @@ import './style.scss';
 sessionStorage.setItem('bulletinBoard', 'true');
 // 去除VIP
 window.showVipMessage = () => {};
+setInterval(() => {
+  window.showVipMessage = () => {};
+}, 500);
 initWallet();

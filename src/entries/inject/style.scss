@@ -23,7 +23,13 @@ body {
   }
 }
 
-.CPPlayingAdView {display:none;}
-.CPCueFrameView {display:none;}
-.outerVideoInfo__banner {display:none;}
+.CPPlayingAdView,
+.CPCueFrameView,
+.CPPlayAdView,
+.outerVideoInfo__banner,
+.outerVideoInfo__Cbanner,
+.CPVipFlagView,
+.notif {
+  display: none;
+}
 
